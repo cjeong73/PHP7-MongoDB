@@ -17,6 +17,12 @@
       array('$set'=>array("title"=>"MongoDB test")));
    echo "Document updated successfully\n";
 	
+   // PHP Fatal error:  Uncaught MongoDB\Driver\Exception\BulkWriteException: 
+   // command update requires authentication in /media/sf_VM_Ubuntu_18_04_LTS/
+   // vendor/mongodb/mongodb/src/Operation/Update.php:179
+
+   // TODO: Fix authentication issue of updateOne 
+
    // now display the updated document
    $cursor = $collection->find();   // both php5 and php7
 	
