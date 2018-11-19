@@ -9,3 +9,5 @@ This table  is based on the PHP library manual(https://docs.mongodb.com/php-libr
 ---|---|---
 |  1    | $m = new MongoClient(); | $m = new MongoDB\Client(); |
 |  2    | $now = new MongoDate(); | $now = new MongoDB\BSON\UTCDateTime(); |
+|  3    | findOne()               | findOne() |
+|  4    | update()                | updateOne() or updateMany()|
