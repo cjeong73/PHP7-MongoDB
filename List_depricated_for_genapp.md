@@ -11,3 +11,4 @@ This table  is based on the PHP library manual(https://docs.mongodb.com/php-libr
 |  2    | $now = new MongoDate(); | $now = new MongoDB\BSON\UTCDateTime(); |
 |  3    | findOne()               | findOne() |
 |  4    | update()                | updateOne() or updateMany()|
+|  5    | '\_id' => MongoId( $r )     | '\_id' => new MongoDB\BSON\ObjectId( $r ) |              
