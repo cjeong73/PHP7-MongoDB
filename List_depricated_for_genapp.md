@@ -9,7 +9,7 @@ This table  is based on the PHP library manual(https://docs.mongodb.com/php-libr
 ---|---|---|---|---
 |  1  | $m = new MongoClient(); | $m = new MongoDB\Client(); | [1](https://docs.mongodb.com/php-library/master/reference/class/MongoDBClient/index.html#phpclass.MongoDB\Client) | |
 |  2  | $now = new MongoDate(); | $now = new MongoDB\BSON\UTCDateTime(); |[1](http://php.net/class.mongodb-bson-utcdatetime), [2](https://docs.mongodb.com/php-library/master/tutorial/custom-types/index.html) | |
-|  3  | selectDB() | selectDatabase() |[1](http://php.net/manual/en/mongoclient.selectdb.php), [2](https://docs.mongodb.com/php-library/master/reference/method/MongoDBClient-selectDatabase/) | <sub>/util/jobs_history_web.php</sub>|
+|  3  | selectDB() | selectDatabase() |[1](http://php.net/manual/en/mongoclient.selectdb.php), [2](https://docs.mongodb.com/php-library/master/reference/method/MongoDBClient-selectDatabase/) | |
 |  4  | findOne()               | findOne() |[1](https://docs.mongodb.com/php-library/master/tutorial/crud/#query-documents) | |
 |  5  | find()               | find() | [1](https://docs.mongodb.com/php-library/master/tutorial/crud/#query-documents), [2](https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/)| |
 |  6  | <sub>find()->sort( [ "name" => 1 ] )  </sub>             | find([],['sort' => [ "name" => 1 ], ] | [1](https://docs.mongodb.com/php-library/master/tutorial/crud/#query-documents)| |
