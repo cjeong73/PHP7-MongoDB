@@ -15,7 +15,7 @@ This table  is based on the PHP library manual(https://docs.mongodb.com/php-libr
 |  6  | <sub>find()->sort( [ "name" => 1 ] )  </sub>             | find([],['sort' => [ "name" => 1 ], ] | [1](https://docs.mongodb.com/php-library/master/tutorial/crud/#query-documents)| |
 |  7  | insert()               | insertOne() or insertMany()| [1](https://docs.mongodb.com/php-library/master/tutorial/crud/#insert-documents) | |
 |  8  | update()                | updateOne() or updateMany()| [1](https://docs.mongodb.com/php-library/master/tutorial/crud/#update-documents)| |
-|  9  | distinct()                | distinct()| [1](http://php.net/manual/en/mongocollection.distinct.php), [2](https://docs.mongodb.com/php-library/master/reference/method/MongoDBCollection-distinct/)| <sub>/sys/sys_pull.php</sub>|
+|  9  | distinct()                | distinct()| [1](http://php.net/manual/en/mongocollection.distinct.php), [2](https://docs.mongodb.com/php-library/master/reference/method/MongoDBCollection-distinct/)| |
 |  10  | remove()                | deleleOne() or deleteMany()| [1](https://docs.mongodb.com/php-library/master/reference/class/MongoDBCollection/)| |
 |  11  | '\_id' => MongoId( $r )     | '\_id' => new MongoDB\BSON\ObjectId( $r ) | [1](https://github.com/mongodb/mongo-php-library/issues/217), [2](http://php.net/manual/en/class.mongodb-bson-objectid.php#class.mongodb-bson-objectid) |  | 
 |  12 | MongoCursorException | \Exception or MongoDB\Exception | [1](https://docs.mongodb.com/php-library/master/reference/exception-classes/index.html#phpclass.MongoDB\Exception\Exception) | |
